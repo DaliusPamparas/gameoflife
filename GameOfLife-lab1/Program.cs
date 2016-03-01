@@ -15,6 +15,7 @@ namespace GameOfLife_lab1
             GameOfLife myGameOfLife = new GameOfLife();
             myGameOfLife.FillListRandom();
             myGameOfLife.WriteOutList();
+           
 
             Console.ReadKey();
         }

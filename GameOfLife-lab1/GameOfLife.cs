@@ -44,27 +44,24 @@ namespace GameOfLife_lab1
                 for (int j = 0; j < 20; j++)
                 {
                     
-                    Console.Write(rand.Next(100));
-                    if (j == 19)
+                   
+                    if( rand.Next(10)<5)
                     {
-                        Console.Write("\n");
+                        _FieldOfGame[i, j] = " ";
                     }
-
-                    //if ( co < 50)
-                    //{
-                    //    _FieldOfGame[i, j] ="0" ;
-                    //}
-                    //else
-                    //{
-                    //    _FieldOfGame[i, j] = " ";
-                    //}
-
-
+                    else
+                    {
+                        _FieldOfGame[i, j] = "*";
+                    }
 
 
                 }
             }
 
+
+        }
+        public void CheckLiveOrDead()
+        {
 
         }
 
