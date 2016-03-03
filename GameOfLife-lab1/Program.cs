@@ -10,11 +10,16 @@ namespace GameOfLife_lab1
     {
         static void Main(string[] args)
         {
-
+            bool go = true;
 
             GameOfLife myGameOfLife = new GameOfLife();
             myGameOfLife.FillListRandom();
-            myGameOfLife.WriteOutList();
+            do
+            {
+                myGameOfLife.CheckLiveOrDead();
+                myGameOfLife.WriteOutList();
+            }
+            while( go);
            
 
             Console.ReadKey();
